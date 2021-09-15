@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/interest_edit"
+        android:layout_width="307dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="52dp"
+        android:hint="@string/Interest"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/interests"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hobby_edit"
+        android:layout_width="306dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="56dp"
+        android:hint="@string/hobby"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/hobby"
+        app:layout_constraintTop_toBottomOf="@+id/interest_edit"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/interests"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:text="Interest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <TextView
+        android:id="@+id/hobby"
+        android:layout_width="105dp"
+        android:layout_height="38dp"
+        android:text="Hobby"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interests"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:text="Tv_show/Movies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+
+    <EditText
+        android:id="@+id/tv_show_edit"
+        android:layout_width="306dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/tv_show"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_show"
+        app:layout_constraintTop_toBottomOf="@+id/interest_edit"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <TextView
+        android:id="@+id/books"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:text="Books"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <EditText
+        android:id="@+id/books_edit"
+        android:layout_width="306dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="50dp"
+        android:hint="@string/books"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/change_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/books"
+        app:layout_constraintTop_toBottomOf="@+id/interest_edit"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <Button
+        android:id="@+id/change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_show_edit"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/topics"
+        android:layout_width="104dp"
+        android:layout_height="26dp"
+        android:text="Topics"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/interest_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
